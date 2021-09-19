@@ -42,7 +42,7 @@ This project uses Google Drive API to Index Files & Folders.
 * set `"service_account": false` to `"service_account": true`
 * Replace {} with data from service account `file.json`
 
-## Multiple Users Password
+## User & Password
 
 * For single user
 
@@ -68,7 +68,7 @@ This project uses Google Drive API to Index Files & Folders.
 
 * This is directory encryption.
 * Add a .password file your required password in your folder which you want to protect, each folder should have its own .password file.
-* The password is stored inside the Google Drive Folder, not the index and the .password file is hidden an cannot be accessed using Index.
+* The password is stored inside the Google Drive Folder, not the index & the .password file is hidden an cannot be accessed using Index.
 
 ## Customization
 
@@ -131,7 +131,7 @@ const uiConfig = {
 * Set second_domain_for_dl to `true` first.
 * Set downloaddomain to ur new index you're going to make below.
 * Then make separate index on different cloudflare account with worker-second-domain.js code.
-* Change only refresh_token or SA and Drive IDs, don't touch anything else.
+* Change only refresh_token or SA & Drive IDs, don't touch anything else.
 * It's done.
 
 ## Themes
@@ -147,7 +147,7 @@ const uiConfig = {
 | superhero | united  | yeti    | vapor   | morph  | quartz   |    
 | zephyr    |
 
-## Audio and Video
+## Audio & Video
 
 * Poster for Video is added as default.
 * Fetch Video Poster from Google Drive, uses default if none available.
@@ -164,7 +164,7 @@ const uiConfig = {
 * use `params.orderBy = 'folder,modifiedTime desc,name';` to sort by Modified Time.
 * A comma-separated list of sort keys. Valid keys are 'createdTime', 'folder', 'modifiedByMeTime', 'modifiedTime', 'name', 'name_natural', 'quotaBytesUsed', 'recency', 'sharedWithMeTime', 'starred', and 'viewedByMeTime'. Each key sorts ascending by default, but may be reversed with the 'desc' modifier. Example usage: ?orderBy=folder,modifiedTime desc,name. Please note that there is a current limitation for users with approximately one million files in which the requested sort order is ignored.
 
-## Get Google_Client_ID and Secret and Generate Token
+## Get Google_Client_ID & Secret & Generate Token
 
 * Open [Google Dev Credentials Site](https://console.developers.google.com/apis/credentials).
 * Create a Project, name as you like.
@@ -175,19 +175,12 @@ const uiConfig = {
 * Fill your APP Details
 * Select Scope as `https://www.googleapis.com/auth/drive` (wait few hours if Google Drive is not showing up if you've just enabled the scope) or
 * You can also enter manual scope `https://www.googleapis.com/auth/drive` and click on add to table and then save or update.
-* Proceed with Save and Continue.
+* Proceed with Save & Continue.
 * Add your email id you want to use as test user, up to 100 emails maximum. (Because you are not verified)
 * In [Credentials Page](https://console.developers.google.com/apis/credentials) Click `Create Credentials` and then Click `OAuth Client ID`.
 * Select Desktop App.
 * Now you have your own CLIENT ID and CLIENT SECRET.
 * Copy your details and save for future use.
 * Copy worker-generator.js code.
-* Replace Line 6 and 7 with your own CLIENT ID and CLIENT SECRET.
-* Paste this code in Cloud flare Workers and follow the site.
-
-## Credits
-
-* Source: [maple3142](https://github.com/maple3142/GDIndex)
-* Source: [yanzai](https://github.com/yanzai/goindex)
-* Source: [Parveen Bhadoo](https://gitlab.com/ParveenBhadooOfficial/Google-Drive-Index)
-* Design: [Bootstrap](https://getbootstrap.com)
+* Replace Line 6 & 7 with your own CLIENT ID and CLIENT SECRET.
+* Paste this code in Cloud flare Workers & follow the site.
