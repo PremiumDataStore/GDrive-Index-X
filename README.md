@@ -4,7 +4,7 @@ This project uses Google Drive API to Index Files & Folders.
 
 ![Screenshot](https://raw.githubusercontent.com/sawankumar/Google-Drive-Index-X/master/images/screenshot.png)
 
-## Basic Config
+## Basic ID Config
 
 ````
     "roots":[
