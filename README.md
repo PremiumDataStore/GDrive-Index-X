@@ -44,13 +44,13 @@ This project uses Google Drive API to Index Files & Folders.
 
 ## User & Password
 
-* For single user
+* For Single User
 
 ````
             // "auth": {"username":"password"}
 ````
 
-* For multiple users
+* For Multiple Users
 
 ````
       {
@@ -129,7 +129,7 @@ const uiConfig = {
 ## Second Domain Systems
 
 * Set second_domain_for_dl to `true` first.
-* Set downloaddomain to ur new index you're going to make below.
+* Set download domain to your new index you're going to make below.
 * Then make separate index on different cloudflare account with worker-second-domain.js code.
 * Change only refresh_token or SA & Drive IDs, don't touch anything else.
 * It's done.
@@ -149,7 +149,7 @@ const uiConfig = {
 
 ## Audio & Video
 
-* Poster for Video is added as default.
+* Poster for video is added as default.
 * Fetch Video Poster from Google Drive, uses default if none available.
 
 ## Search Limitations
@@ -179,8 +179,8 @@ const uiConfig = {
 * Add your email id you want to use as test user, up to 100 emails maximum. (Because you are not verified)
 * In [Credentials Page](https://console.developers.google.com/apis/credentials) Click `Create Credentials` and then Click `OAuth Client ID`.
 * Select Desktop App.
-* Now you have your own CLIENT ID and CLIENT SECRET.
-* Copy your details and save for future use.
+* Now you have your own CLIENT ID & CLIENT SECRET.
+* Copy your details & save for future use.
 * Copy worker-generator.js code.
-* Replace Line 6 & 7 with your own CLIENT ID and CLIENT SECRET.
+* Replace Line 6 & 7 with your own CLIENT ID & CLIENT SECRET.
 * Paste this code in Cloud flare Workers & follow the site.
