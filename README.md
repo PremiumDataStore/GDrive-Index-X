@@ -1,6 +1,6 @@
-# Google Personal/Shared Drive Index
+# Google Personal & Shared Drive Index
 
-This project uses Google Drive API to Index Files and Folders.
+This project uses Google Drive API to Index Files & Folders.
 
 ![Screenshot](https://raw.githubusercontent.com/sawankumar/Google-Drive-Index-X/master/images/screenshot.png)
 
